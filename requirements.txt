@@ -4,9 +4,11 @@ cffi==1.14.4
 chardet==3.0.4
 cryptography==3.3.1
 defusedxml==0.6.0
+dj-database-url==0.5.0
 Django==3.0.5
 django-allauth==0.44.0
 django-excel==0.0.10
+django-heroku==0.3.1
 django-multiforloop==0.2.1
 django-rename-app==0.1.2
 et-xmlfile==1.0.1
