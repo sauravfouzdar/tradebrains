@@ -1,0 +1,567 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+    {% block content %}
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1><span id="js-rotating">Simplifying Investing for Everyone</span></h1>
+                            <p class="p-large">Want to find the undervalue valued stocks? Use our intrinsic value calculators to calculate the true value of stocks. Download it today!</p>
+                        <!--    <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>  -->
+                            <a class="btn-solid-lg page-scroll" href="https://play.google.com/store/apps/details?id=com.tradebrains.calculator&hl=en_IN&gl=US"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                        </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'images/img3.webp' %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/personp.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Much needed app with eye catching designs, well designed & easy to use. UI is so user friendly.</p>
+                                            <p class="testimonial-author">Aashish Abhishek</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/femaleperson.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Very smooth and easy to use app with excellent functionality. Highly recommended!</p>
+                                            <p class="testimonial-author">Maulika Lisa</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/femaleperson.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">One more nice user friendly app. Trade Brains has gained my trust with time. Great work!</p>
+                                            <p class="testimonial-author">Jyoti Sinha</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/personp.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">It's the best app for the intrinsic value calculation.</p>
+                                            <p class="testimonial-author">Arpit patidar</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/personp.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Easy, Awesome work</p>
+                                            <p class="testimonial-author">SARAVANAMURTHY BALASUBRAMANI</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="{% static 'images/personp.png' %}" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Easy to use and very helpful</p>
+                                            <p class="testimonial-author">Joseph Daher</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of testimonials -->
+    
+
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>FEATURES</h2>
+                    <div class="p-heading p-large">IV calculator was designed to help day-to-day retail investors in India by providing necessary investing/trading tools.</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                  <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>Tools</a>
+                    </li>  
+                </ul>
+                <!-- end of tabs links -->
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+                    
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">PE valuation</h4>
+                                                <p>This tool let's you find intrinsic value of a stock using historical price to earnings ratio data</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-compass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">DCF valuation</h4>
+                                                <p>Discount cash flow valuation method is based on cash flow of a company to find it's true value</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-file-code"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">ROE valuation</h4>
+                                                <p>Using historical returns on equity we can predict current value of a company using ROE calculator</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-gem"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="{% static 'images/img5.webp' %}" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-calendar-check"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">SIP, Lump sum calculator</h4>
+                                                <p>If you invest in mutual funds, use our SIP/Lump Sum calculator to find your maturity amount</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Graham valuation</h4>
+                                                <p>Developed by father of value investing Benjamin Graham, calculate right buying price of a stock</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Dhandho IV valuation</h4>
+                                                <p>Developed by another legendry investor Mohnish pabrai. It let's one find true value using company's cash flow</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Video -->
+    <div id="preview" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PREVIEW</h2>
+                    <div class="p-heading p-large">Visit our <a href="https://www.youtube.com/c/TradeBrains/">youtube</a> channel to learn more about Indian stock markets!</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=uLADLf984x0" data-effect="fadeIn">
+                                <img class="img-fluid" src="{% static 'images/video-frame.jpg' %}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
+
+
+    <!-- Details 1 -->
+    <div id="details" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="{% static 'images/pelightbox.png' %}" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>PE Valuation</h3>
+                        <p>Find true value of a stock using our price to earnings ratio valuation calculator</p>
+                        <a href="/PE-valuation-Calculator" class="btn-solid-reg">PE calculator</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>SIP calculator</h3>
+                            <p>Now easily find your Mutual Fund investment returns, using our SIP calculator</p>
+                            <a href="/SIP-Calculator" class="btn-solid-reg" >SIP calculator</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="{% static 'images/siplightbox.png' %}" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
+
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="{% static 'images/details-lightbox-1.png' %}" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Goals Setting</h3>
+				<hr>
+                <p>Leno can easily help you track your personal development evolution if you take the time to set it up.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
+                <p>You should definitely give it a try when you need a good app.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+				<img class="img-fluid" src="{% static 'images/details-lightbox-2.png' %}" alt="alternative">
+			</div>
+			<div class="col-lg-6">
+				<h3>Calendar Input</h3>
+				<hr>
+                <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease.</p>
+                <h4>User Feedback</h4>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
+                <p>You should definitely give it a try when you need a good app.</p>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
+					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
+				</table>
+				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+
+
+    <!-- Screenshots -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img1.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img1.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img2.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img2.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img3.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img3.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img4.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img4.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img5.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img5.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img1.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img1.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img2.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img2.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img3.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img3.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img4.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img4.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="{% static 'images/img5.png' %}" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="{% static 'images/img5.webp' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+                                
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of screenshots -->
+
+
+    <!-- Download -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>Download <span class="blue">Tradebrains</span></h2>
+                        <p class="p-large">Want to find the undervalue valued stocks? Use our intrinsic value calculators to calculate the true value of stocks. Download it today!</p>
+                        <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=com.tradebrains.calculator&hl=en_IN&gl=US"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'images/img4.webp' %}" alt="alternative">
+                    </div> <!-- end of img-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of download -->
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="10000">1</div>
+                            <p class="counter-info">Installs</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="3.8">1</div>
+                            <p class="counter-info">PlayStore Rating</p>
+                        </div>
+                       
+                    </div>
+                    <!-- end of counter -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"></li>
+                        <li><i class="fas fa-map-marker-alt"></i>Dailyraven Technologies Pvt Ltd<br>
+                            SRK Building 404, 2nd Floor, 17th C Main Rd, KHB Colony, 5th Block,
+                            Koramangala, Bengaluru,Karnataka 560095</li>
+                        <br>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:Info@tradebrains.in">Info@tradebrains.in</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+           
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+{% endblock %}
+    

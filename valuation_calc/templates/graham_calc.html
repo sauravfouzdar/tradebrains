@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div id="preview" class="basic-1">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-12">
+               <h2>Graham valuation Calculator</h2>
+               <div class="p-heading p-large">Input all field to get Intrinsic value of a Stock
+                  <form action="" method="post">
+                     {% csrf_token %}
+                     <table>
+                     {{ form.as_table }}
+                     </table>
+                     <input type="submit" value="Submit" name="grahamresult">
+                      <input type ="reset"></input>
+                    </form>
+                 
+                 <h3 style="text-align:center;">Intrinsic value of stock: {{x}}</h3> 
+                 
+               </div>
+           </div> <!-- end of col -->
+       </div> <!-- end of row -->
+   </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+<!-- end of video -->
+
+
+{% endblock %}
